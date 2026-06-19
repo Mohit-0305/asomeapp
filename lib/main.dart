@@ -19,36 +19,31 @@ class HomePage extends StatelessWidget {
          title: Text("Mohit's App"),
       ),
       body: Center(
-         child:Container(
-            padding: const EdgeInsets.all(10),
-            alignment: Alignment.center,
-            // color: Colors.green,
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-               color: Colors.yellow,
-               borderRadius: BorderRadius.circular(30),
-               gradient: LinearGradient(colors: [
-                  Colors.yellow,
-                  Colors.green,
-               ]),
-               boxShadow: [
-                  BoxShadow(
-                     color: Colors.grey,
-                     blurRadius: 30,
-                     spreadRadius: 10,
-                     offset: Offset(1.0 , 10.0)
-                  )
-               ]
-            ),
-            child: Text("Mohit's App",
-               textAlign: TextAlign.center,
-               style: TextStyle(
+         child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+               Container(
+                  padding: const EdgeInsets.all(10),
+                  width: 100,
+                  height: 100,
                   color: Colors.red,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
+            
                ),
-            ),
+               Container(
+                  padding: const EdgeInsets.all(10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.yellow,
+            
+               ),
+               Container(
+                  padding: const EdgeInsets.all(10),
+                  width: 100,
+                  height: 100,
+                  color: Colors.green,
+            
+               ),
+            ],
          ),
       ),
     );
